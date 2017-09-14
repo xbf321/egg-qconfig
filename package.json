@@ -1,0 +1,69 @@
+{
+  "name": "egg-qconfig",
+  "version": "1.0.0",
+  "description": "qconfig for eggjs",
+  "eggPlugin": {
+    "name": "qconfig",
+    "dependencies": [
+      "schedule"
+    ]
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "debug": "^3.0.1",
+    "mkdirp": "^0.5.1",
+    "mz": "^2.6.0",
+    "urllib": "^2.24.0"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "autod-egg": "^1.0.0",
+    "debug": "^3.0.1",
+    "egg": "^1.6.1",
+    "egg-bin": "^4.0.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.8.0",
+    "eslint": "^4.3.0",
+    "eslint-config-egg": "^5.0.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "export DEBUG=qconfig && npm run dev",
+    "test": "export DEBUG=qconfig && npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "dev": "egg-bin dev",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "app",
+    "config",
+    "agent.js",
+    "lib",
+    "app.js"
+  ],
+  "ci": {
+    "version": "6, 8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbf321/egg-qconfig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eggjs/egg/issues"
+  },
+  "homepage": "https://github.com/xbf321/egg-qconfig#readme",
+  "author": "xbf321",
+  "license": "MIT"
+}
