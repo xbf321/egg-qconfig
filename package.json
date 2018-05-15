@@ -1,6 +1,6 @@
 {
   "name": "egg-qconfig",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "qconfig for eggjs",
   "eggPlugin": {
     "name": "qconfig",
@@ -33,7 +33,7 @@
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "start": "export DEBUG=qconfig && npm run dev",
