@@ -6,9 +6,9 @@
  * @property {String} SOME_KEY - some description
  */
 exports.qconfig = {
+    get_token_url: 'http://pbservice.corp.qunar.com/api/app/info.json',
+    get_entrypoint_url: 'http://qconfig.corp.qunar.com/entrypoint',
     name: '',
     token: '',
-    get_token_url: '',
-    get_entrypoint_url: '',
-    interval: '5m',
+    interval: '1m',
 };
