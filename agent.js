@@ -7,7 +7,7 @@ const Client = require('./lib/client');
 module.exports = agent => {
     const config = agent.config.qconfig;
     agent.qconfig = new Client(Object.assign({}, config, { cluster: agent.cluster.bind(agent), baseDir: agent.baseDir }));
-    agent.beforeStart(function* () {
-        yield agent.qconfig.ready();
+    agent.beforeStart(async function() {
+        await agent.qconfig.ready();
     });
 };

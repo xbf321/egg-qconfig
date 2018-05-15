@@ -34,7 +34,7 @@ exports.qconfig = {
     get_token_url: '',
     // 获得访问地址的URL
     get_entrypoint_url: '',
-    // 默认5分钟
+    // 默认1分钟
     interval: '1m',
 };
 ```
@@ -44,7 +44,7 @@ exports.qconfig = {
 ```js
 // 在代码中使用
 // 请注意,出现错误将会抛出异常.
-const content = yield app.qconfig.get('key');
+const content = await app.qconfig.get('key');
 ```
 
 <!-- example here -->
